@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/css.css">
+</head>
+<body>
+    
+    <header class="cabecalho"> 
+        <div class="cabecalho-conteudo"> 
+            <h1>Calculadora Simples</h1> 
+            <p>Calculadoras rápidas, práticas e gratuitas.</p> 
+        </div>
+
+    </header>
+
+  <nav class="menu">
+
+<a href="../index.html" class="nome-site">
+    Calculadora
+</a>
+
+<div class="menu-links">
+    <a href="../index.html">Início</a>
+    <a href="MMC.html">MMC</a>
+    <a href="regradetres.html">Regra de três</a>
+    <a href="sobre.html">Sobre</a>
+</div>
+
+
+</nav>
+
+
+   <article class="artigo">
+
+    <header>
+        <h1>Como calcular o MMC (Mínimo Múltiplo Comum)</h1>
+
+        <p>
+            O <strong>MMC</strong> significa <strong>Mínimo Múltiplo Comum</strong>.
+            Ele é o menor número positivo que é múltiplo de dois ou mais números
+            ao mesmo tempo.
+        </p>
+    </header>
+
+    <section>
+        <h2>O que é MMC?</h2>
+
+        <p>
+            O Mínimo Múltiplo Comum, conhecido como MMC, é o menor número
+            positivo que pode ser dividido exatamente por dois ou mais números.
+        </p>
+
+        <p>
+            Por exemplo, vamos encontrar o MMC de <strong>6 e 8</strong>.
+        </p>
+    </section>
+
+    <section>
+        <h2>1. Encontrando o MMC através dos múltiplos</h2>
+
+        <p>
+            Primeiro, podemos listar os múltiplos de cada número e procurar
+            o primeiro número que aparece nas duas listas.
+        </p>
+
+        <h3>Múltiplos de 6:</h3>
+
+        <p>
+            6, 12, 18, <strong>24</strong>, 30, 36...
+        </p>
+
+        <h3>Múltiplos de 8:</h3>
+
+        <p>
+            8, 16, <strong>24</strong>, 32, 40...
+        </p>
+
+        <p>
+            O primeiro número que aparece nas duas listas é o
+            <strong>24</strong>.
+        </p>
+
+        <p>
+            Portanto:
+        </p>
+
+        <p>
+            <strong>MMC(6, 8) = 24</strong>
+        </p>
+    </section>
+
+    <section>
+        <h2>2. Como calcular o MMC pela fatoração</h2>
+
+        <p>
+            Para números maiores, podemos utilizar a fatoração em números
+            primos. Esse método costuma ser mais rápido e organizado.
+        </p>
+
+        <p>
+            Vamos calcular o MMC de <strong>12 e 18</strong>.
+        </p>
+
+        <h3>Fatorando o número 12</h3>
+
+        <p>
+            12 = 2 × 2 × 3
+        </p>
+
+        <p>
+            Também podemos escrever:
+        </p>
+
+        <p>
+            <strong>12 = 2² × 3</strong>
+        </p>
+
+        <h3>Fatorando o número 18</h3>
+
+        <p>
+            18 = 2 × 3 × 3
+        </p>
+
+        <p>
+            Ou:
+        </p>
+
+        <p>
+            <strong>18 = 2 × 3²</strong>
+        </p>
+
+        <p>
+            Agora devemos pegar todos os fatores primos que aparecem,
+            utilizando a <strong>maior potência</strong> de cada fator.
+        </p>
+
+        <ul>
+            <li>O número 2 aparece como 2².</li>
+            <li>O número 3 aparece como 3².</li>
+        </ul>
+
+        <p>
+            Portanto:
+        </p>
+
+        <p>
+            <strong>MMC = 2² × 3²</strong>
+        </p>
+
+        <p>
+            Fazendo a multiplicação:
+        </p>
+
+        <p>
+            <strong>MMC = 4 × 9 = 36</strong>
+        </p>
+
+        <p>
+            Portanto:
+        </p>
+
+        <p>
+            <strong>MMC(12, 18) = 36</strong>
+        </p>
+    </section>
+
+    <section>
+        <h2>3. Calculando o MMC pela divisão simultânea</h2>
+
+        <p>
+            Outra maneira bastante utilizada para calcular o MMC é através
+            da <strong>divisão simultânea</strong>.
+        </p>
+
+        <p>
+            Vamos novamente calcular o MMC de <strong>12 e 18</strong>.
+        </p>
+
+        <pre>
+12   18 | 2
+ 6    9 | 2
+ 3    9 | 3
+ 1    3 | 3
+ 1    1
+        </pre>
+
+        <p>
+            Agora multiplicamos todos os números que ficaram do lado direito:
+        </p>
+
+        <p>
+            <strong>2 × 2 × 3 × 3 = 36</strong>
+        </p>
+
+        <p>
+            Portanto:
+        </p>
+
+        <p>
+            <strong>MMC(12, 18) = 36</strong>
+        </p>
+    </section>
+
+    <section>
+        <h2>Uma regra importante</h2>
+
+        <p>
+            Durante a divisão simultânea, podemos dividir um ou mais números
+            por um número primo.
+        </p>
+
+        <p>
+            Se um número não puder ser dividido naquele momento, ele
+            permanece igual.
+        </p>
+
+        <pre>
+12   18 | 2
+ 6    9
+        </pre>
+
+        <p>
+            Nesse exemplo, o 12 foi dividido por 2 e virou 6.
+            O 18 não foi dividido e continuou representado pelo 9 após a
+            divisão correspondente.
+        </p>
+    </section>
+
+    <section>
+        <h2>Quando usamos o MMC?</h2>
+
+        <p>
+            O MMC é utilizado em diversas situações da matemática,
+            principalmente quando precisamos descobrir quando eventos ou
+            ciclos que se repetem vão acontecer juntos novamente.
+        </p>
+
+        <p>
+            Por exemplo:
+        </p>
+
+        <p>
+            Um ônibus passa por determinado ponto a cada
+            <strong>6 minutos</strong>, enquanto outro passa a cada
+            <strong>8 minutos</strong>.
+            Se os dois passaram juntos agora, depois de quantos minutos
+            eles passarão juntos novamente?
+        </p>
+
+        <p>
+            Para descobrir, calculamos:
+        </p>
+
+        <p>
+            <strong>MMC(6, 8) = 24</strong>
+        </p>
+
+        <p>
+            Portanto, os dois ônibus passarão juntos novamente depois de
+            <strong>24 minutos</strong>.
+        </p>
+    </section>
+
+    <section>
+        <h2>Onde o MMC é utilizado?</h2>
+
+        <p>
+            O MMC pode ser utilizado em várias situações, como:
+        </p>
+
+        <ul>
+            <li>Resolver problemas envolvendo frações;</li>
+            <li>Encontrar denominadores comuns;</li>
+            <li>Resolver problemas envolvendo períodos de tempo;</li>
+            <li>Comparar ciclos que se repetem;</li>
+            <li>Resolver diversos exercícios de matemática.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Resumo: como calcular o MMC</h2>
+
+        <ol>
+            <li>Identifique os números que deseja calcular.</li>
+
+            <li>
+                Fatore os números em fatores primos ou utilize a
+                divisão simultânea.
+            </li>
+
+            <li>
+                Pegue cada fator primo utilizando sua maior potência.
+            </li>
+
+            <li>
+                Multiplique todos esses fatores.
+            </li>
+
+            <li>
+                O resultado será o <strong>Mínimo Múltiplo Comum (MMC)</strong>.
+            </li>
+        </ol>
+    </section>
+
+    
+        <p>
+            <strong>Exemplo final:</strong>
+            MMC(12, 18) = 36.
+        </p>
+
+
+</article>
+<footer class="rodape">
+    <nav class="menu2">
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="privacidade.html">Política de Privacidade</a>
+        <a href="termos.html">Termos de Uso</a>
+    </nav>
+
+    <p class="prodape">&copy; 2026 - Seu Site. Todos os direitos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrV8cX/KbnVDxM+D2scQbITxI" 
+crossorigin="anonymous"></script>
+
+<script src="java/calculadora.js"></script>
+
+</body>
+</html>

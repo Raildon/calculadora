@@ -1,0 +1,293 @@
+/* ========================= CABEÇALHO ========================= */ 
+.cabecalho { background: linear-gradient(135deg, #0b1f3a, #123b6d);
+            color: white; 
+            width: 100%; 
+            padding: 30px 20px; 
+            text-align: center; 
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.20); } 
+
+.cabecalho-conteudo h1 { margin: 0; font-size: 32px; 
+                            font-weight: bold; 
+                            letter-spacing: 0.5px; } 
+
+
+.cabecalho-conteudo p { margin: 8px 0 0; 
+            font-size: 16px; opacity: 0.9; }
+
+
+/* =========================
+NAVBAR
+========================= */
+
+.menu {
+background-color: #0b1f3a;
+
+
+border: none;
+padding: 10px 25px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+width: 96%;
+margin: 15px 2%;
+
+border-radius: 10px;
+
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+
+
+}
+
+/* Nome do site */
+
+.nome-site {
+color: white !important;
+text-decoration: none;
+
+
+font-size: 22px;
+font-weight: bold;
+
+border: none !important;
+
+margin: 0 !important;
+padding: 8px 12px !important;
+
+
+}
+
+/* Links do menu */
+
+.menu-links {
+display: flex;
+align-items: center;
+gap: 5px;
+}
+
+.menu-links a {
+color: white !important;
+
+
+text-decoration: none;
+
+border: none;
+
+padding: 10px 15px;
+
+margin: 0;
+
+border-radius: 8px;
+
+transition: 0.3s;
+
+
+}
+
+/* Mouse sobre o link */
+
+.menu-links a:hover {
+background-color: #0d6efd;
+
+
+transform: translateY(-2px);
+
+}
+
+/* Página inicial */
+
+
+
+/* =========================
+CALCULADORA
+========================= */
+
+.calculadora {
+width: 300px;
+
+
+margin: 30px auto;
+
+padding: 20px;
+
+border: 2px solid black;
+
+border-radius: 10px;
+
+background-color: #ddd;
+
+
+}
+
+#visor {
+width: 100%;
+
+
+height: 50px;
+
+margin-bottom: 15px;
+
+font-size: 25px;
+
+text-align: right;
+
+
+}
+
+.botoes {
+display: grid;
+
+
+grid-template-columns: repeat(4, 1fr);
+
+gap: 8px;
+
+
+}
+
+.botoes button {
+height: 50px;
+
+
+font-size: 20px;
+
+cursor: pointer;
+
+
+}
+
+.botoes .limpar {
+grid-column: span 4;
+}
+
+/* =========================
+ESPAÇO PARA PUBLICIDADE
+========================= */
+
+.anuncio {
+width: 90%;
+
+
+min-height: 100px;
+
+margin: 30px auto;
+
+text-align: center;
+
+
+}
+
+/* =========================
+ARTIGOS
+========================= */
+
+.artigo {
+margin-left: 250px;
+
+
+margin-right: 100px;
+
+}
+
+/* =========================
+RODAPÉ
+========================= */
+
+.rodape {
+background-color: #0b1f3a;
+
+
+padding: 20px;
+
+width: 100%;
+
+text-align: center;
+
+
+}
+
+/* Links do rodapé */
+
+.menu2 {
+padding: 10px;
+
+
+display: flex;
+
+justify-content: center;
+
+flex-wrap: wrap;
+
+gap: 5px;
+
+
+}
+
+.menu2 a {
+color: white;
+
+
+text-decoration: none;
+
+padding: 10px 15px;
+
+border-radius: 6px;
+
+transition: 0.3s;
+
+
+}
+
+.menu2 a:hover {
+background-color: #0d6efd;
+}
+
+/* Copyright */
+
+.prodape {
+color: white;
+
+
+text-align: center;
+
+margin-top: 15px;
+
+
+}
+
+/* =========================
+RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+
+.menu {
+    flex-direction: column;
+
+    gap: 10px;
+
+    padding: 15px;
+}
+
+.menu-links {
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.menu-links a {
+    font-size: 14px;
+
+    padding: 8px 10px;
+}
+
+.artigo {
+    margin-left: 20px;
+
+    margin-right: 20px;
+}
+
+
+}
